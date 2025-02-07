@@ -19,10 +19,6 @@
         <BaseButton type="submit">Entrar</BaseButton>
 
       </form>
-
-      <p class="mt-4 text-center text-gray-600">
-        <RouterLink to="/register" class="text-indigo-600 hover:underline">Criar conta</RouterLink>
-      </p>
       <p class="mt-2 text-center text-sm text-gray-500">
         <RouterLink to="/forgot-password" class="hover:underline">Esqueceu sua senha?</RouterLink>
       </p>

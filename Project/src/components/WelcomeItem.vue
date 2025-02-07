@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .item {
   margin-top: 2rem;
   display: flex;
@@ -40,6 +40,12 @@ h3 {
   margin-bottom: 0.4rem;
   color: var(--color-heading);
 }
+
+.link {
+  display: block; /* Faz cada link ocupar uma linha */
+  margin-bottom: 0.5rem; /* Adiciona espaço entre os links */
+}
+
 
 @media (min-width: 1024px) {
   .item {
