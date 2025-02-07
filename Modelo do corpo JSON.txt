@@ -1,0 +1,46 @@
+VISITOR
+
+{
+    "name": "Miuna",
+    "cellphone": "93991-9459",
+    "gender": "Masculino",
+    "age": 30,
+    "church": "Lagoinha",
+    "metTheChurch": "Instagram",
+    "registrationDate": "2025-01-24" 
+}
+
+
+
+
+ROOM
+
+{
+  "name": "Sala Principal"
+}
+
+
+
+
+MINISTRIES
+
+{
+  "name": "Doka"
+}
+
+
+
+
+RESERVATION
+
+{
+  "date": "2025-01-22",
+  "startTime": "10:00",
+  "endTime": "12:00",
+  "ministry": {
+    "name": "Doka"
+  },
+  "room": {
+    "name": "Sala Principal"
+  }
+}
