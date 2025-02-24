@@ -1,7 +1,5 @@
 package com.doka.organizer.entity;
-
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 
