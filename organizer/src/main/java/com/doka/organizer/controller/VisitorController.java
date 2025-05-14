@@ -10,7 +10,7 @@ import java.util.List;
 
 //Gerenciador das requisições HTTP
 @RestController
-@RequestMapping("/visitantes")
+@RequestMapping("/visitors")
 public class VisitorController {
 
     @Autowired

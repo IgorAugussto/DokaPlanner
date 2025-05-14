@@ -8,13 +8,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: VisitorRegister, // 👈 Cadastro de visitante
+      name: 'login',
+      component: LoginView, // 👈 Cadastro de visitante
     },
     {
-      path: '/login',
-      name: 'login',
-      component: LoginView,  // 👈 Adiciona a rota da tela de login
+      path: '/home',
+      name: 'home',
+      component: VisitorRegister,  // 👈 Adiciona a rota da tela de login
     },
     {
       path: '/register',
@@ -36,5 +36,16 @@ const router = createRouter({
     },
   ],
 })
+
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('token')
+
+  if (to.meta.requiresAuth && !token) {
+    next({ name: 'login' }) // redireciona se não estiver autenticado
+  } else {
+    next()
+  }
+})
+
 
 export default router
